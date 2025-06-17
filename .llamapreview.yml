@@ -1,0 +1,18 @@
+# .llamapreview.yml
+
+# Optional PR filters
+pull_request_rules:
+  labels:
+    - review
+  min_diff_lines: 1 # Only review if at least 1 line is changed
+
+# Optional LLM settings (if configurable)
+llm:
+  model: gpt-4
+  temperature: 0.2
+
+# Review behavior
+review:
+  approve: false # Do not auto-approve
+  comment_mode: summary # Options: 'summary', 'inline', 'both'
+  summary_header: "🧠 LlamaPReview AI Review Summary"
